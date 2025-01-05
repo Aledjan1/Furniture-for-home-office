@@ -1,200 +1,217 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+head {
+  display: none;
+}
+
+body {
+  background-color: #eee;
+  font-family: "Lato", sans-serif;
+}
+
+#page-wrapper {
+  position: relative;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  min-height: 75px;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #eee;
+  width: 100%;
+  z-index: 1;
+}
+
+.logo {
+  width: 60vw;
+}
+
+.logo > img {
+  width: 100%;
+  height: 100%;
+  max-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 20px;
+}
+
+nav {
+  font-weight: 400;
+}
+
+nav > ul {
+  width: 35vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#promotions,
+#best_selling,
+#footer {
+  display: flex;
+  padding: 10px 0;
+  justify-content: center;
+  position: relative;
+}
+
+
+
+.section-inner,
+.section-content {
+  display: flex;
+  margin: 20px 7px;
+  padding: 40px;
+  justify-content: space-between;
+  flex: 1;
   
-  head {
-    display: none;
-  }
+}
+ h2 {
   
-  body {
-    background-color: #eee;
-    font-family: 'Lato', sans-serif;
-  }
-  
-  #page-wrapper {
-    position: relative;
-  }
-  
+ }
+.section-inner__card {
+  padding: 0 15px;
+  justify-content: center;
+}
+
+.image-furniture {
+  width: 350px;
+  height: 240px;
+}
+
+.title_image {
+  width: 1000px;
+}
+
+.header {
+  text-align: center;
+  color: #333333;
+  font-weight: 800;
+  font-size: 38px;
+  padding: 20px 0;
+  margin: 15px 0;
+}
+
+.image-chair {
+  height: 350px;
+  width: 320px;
+  padding: 0 15px;
+}
+
+.content {
+  color: #333333;
+  text-align: center;
+  margin: 24px 0 0;
+}
+
+.armchair {
+  color: #333333;
+  font-size: 20px;
+  margin: 24px 0 0;
+  text-align: center;
+  font-weight: 600;
+}
+
+.price {
+  color: #7bb57c;
+  font-size: 20px;
+  margin: 24px 0 0;
+  text-align: center;
+  font-weight: 600;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+.btn {
+  margin: 24px 0 0;
+  background-color: green;
+  border-radius: 5px;
+  color: white;
+  font-size: 10px;
+  height: 30px;
+  width: 100px;
+}
+
+.section-video__top10-chairs {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+section-video__top10-chairs > iframe {
+  max-width: 560px;
+  width: 100%;
+}
+
+#form,
+.contact {
+  display: flex;
+  padding: 0 15px;
+  justify-content: space-around;
+  background-color: #f7f5f6;
+  flex-direction: column;
+  flex: 1;
+}
+
+.full_mame,
+.email,
+.phone_number {
+  margin: 15px 0 0;
+  padding: 10px 15px;
+  background: #ffffff;
+  border-radius: 4px;
+}
+
+.address_list,
+.hours_list,
+.contacts_list {
+  display: flex;
+}
+
+.address_title,
+.hours_title,
+.contacts_title {
+  margin: 0 0 5px;
+  padding: 8px 15px 8px 0;
+  color: #333333;
+  font-size: 22px;
+}
+
+.address,
+.hours,
+.contacts {
+  padding: 8px 0 8px 15px;
+  color: #707070;
+  font-size: 16px;
+}
+
+h3 {
+  color: #333333;
+  font-size: 30px;
+}
+
+@media (max-width: 768px) {
   header {
-    position: fixed;
-    top: 0;
-    min-height: 75px;
-    padding: 0px 20px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #eee;
-    width: 100%;
-    z-index: 1;
-  }
-  
-  .logo {
-    width: 60vw;
-  }
-  
-  .logo > img {
-      width: 100%;
-      height: 100%;
-      max-width: 300px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      margin-left: 20px;
-  }
-  
-  nav {
-      font-weight: 400;
-  }
-  
-  nav > ul {
-      width: 35vw;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-  }
-  
-  .container {
-      max-width: 1000px;
-      width: 100%;
-      margin: 0 auto;
-  }
-  
-  #promotions, #best_selling, #footer {
-    display: flex;
-    padding: 10px 0;
-    justify-content: center;
-    position: relative;
-  }
-  
-  .section-inner, .section-content {
-    display: flex;
-    margin: 20px 7px;
-    padding: 40px;
-    justify-content: space-between;
-    
-  }
-  
-  .section-inner__card {
-    padding: 0 15px;
-    justify-content: center;
-  }
-  
-  .image-furniture {
-    width: 350px;
-    height: 240px;
-  }
-  
-  .title_image {
-    width: 1000px;
-  }
-  
-  .header {
-    text-align: center;
-    color: #333333;
-    font-weight: 800;
-    font-size: 38px;
-    padding: 20px 0;
-    margin: 15px 0;
-  }
-  
-  .image-chair {
-    height: 350px;
-    width: 320px;
-    padding: 0 15px;
-  }
-  
-  .content {
-    color: #333333;
-    text-align: center;
-    margin: 24px 0 0;
-  }
-  
-  .armchair {
-    color: #333333;
-    font-size: 20px;
-    margin: 24px 0 0;
-    text-align: center;
-    font-weight: 600;
-  }
-  
-  .price {
-    color: #7bb57c;
-    font-size: 20px;
-    margin: 24px 0 0;
-    text-align: center;
-    font-weight: 600;
-  }
-  
-  .button-container {
-    display: flex;
-    justify-content: center;
-  }
-  .btn {
-    margin: 24px 0 0;
-    background-color: green;
-    border-radius: 5px;
-    color: white;
-    font-size: 10px;
-    height: 30px;
-    width: 100px;
-  }
-  
-  .section-video__top10-chairs {
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
-  }
-  
-  section-video__top10-chairs > iframe {
-    max-width: 560px;
-    width: 100%;
-  }
-  
-  #form, .contact {
-    display: flex;
-    padding: 0 15px;
-    justify-content: space-around;
-    background-color: #f7f5f6;
     flex-direction: column;
-    flex: 1;
+    align-items: center;
+    text-align: center;
   }
-  
-  .full_mame, .email, .phone_number {
-    margin: 15px 0 0;
-    padding: 10px 15px;
-    background: #FFFFFF;
-    border-radius: 4px;
-  }
-  
-  .address_list, .hours_list, .contacts_list {
-    display: flex;
-  }
-  
-  .address_title, .hours_title, .contacts_title {
-    margin: 0 0 5px;
-    padding: 8px 15px 8px 0;
-    color: #333333;
-    font-size: 22px;
-  }
-  
-  .address, .hours, .contacts {
-    padding: 8px 0 8px 15px;
-    color: #707070;
-    font-size: 16px;
-  }
-  
-  h3 {
-    color: #333333;
-    font-size: 30px;
-  }
-  
-  @media (max-width: 768px) {
-      header {
-          flex-direction: column;
-          align-items: center;
-          text-align: center;
-      }
-  }
+}
