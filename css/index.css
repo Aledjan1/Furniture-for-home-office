@@ -65,26 +65,21 @@ nav > ul {
 #promotions,
 #best_selling,
 #footer {
-  display: flex;
+  display: grid;
   padding: 10px 0;
   justify-content: center;
   position: relative;
 }
 
-
-
 .section-inner,
 .section-content {
   display: flex;
   margin: 20px 7px;
-  padding: 40px;
-  justify-content: space-between;
+  padding: 20px;
+  justify-content: center;
   flex: 1;
-  
 }
- h2 {
-  
- }
+
 .section-inner__card {
   padding: 0 15px;
   justify-content: center;
